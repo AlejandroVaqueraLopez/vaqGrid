@@ -1,11 +1,14 @@
 "use strict";
-const list = data.galeryItems;
-const title = data.galeryTitle;
+let list = [];//will be overwritten;
+let title = "";//will be overwritten
 let firstCounter = 0;//500 or less
 let secondCounter = 0;//501 -> 999
 let thirdCounter = 0;//1000 -> ~
 let template = "";
 const galeryTarget = document.querySelector("#galeryTarget");
+
+//we set the configuration
+configList();
 
 //we first need to execute the function that creates the container for the galery
 createGaleryContainer();//
